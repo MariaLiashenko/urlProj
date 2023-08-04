@@ -1,9 +1,8 @@
 import { Test, TestingModule } from "@nestjs/testing"
 import { Model } from "mongoose"
-import { Url } from "./schemas/url.schema"
-import { UrlService } from "./url.service"
+import { Url } from "../src/url/schemas/url.schema"
+import { UrlService } from "../src/url/url.service"
 import { getModelToken } from "@nestjs/mongoose"
-import { CreateUrlDto } from "./dto/create-url.dto"
 import { NotFoundException } from "@nestjs/common"
 
 describe("UrlService", () => {
